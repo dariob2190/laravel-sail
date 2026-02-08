@@ -22,7 +22,6 @@ Empezaremos haciendo la estructura del proyecto, abrimos la terminal, vamos a la
 
 ```
 curl -s "https://laravel.build/luisdario-laravel" | bash
-
 ```
 
 Después de tener todos los archivos veremos un mensaje como este:
@@ -35,14 +34,12 @@ Laravel Sail es la interfaz de comandos para manejar el entorno Docker de Larave
 
 ```
 cd luisdario-laravel
-
 ```
 
 Ahora levantamos los contenedores por primera vez. Usamos el flag `-d` para que se queden en segundo plano y no bloqueen la terminal:
 
 ```
 ./vendor/bin/sail up -d
-
 ```
 
 Nos tendría que salir algo así:
@@ -76,5 +73,7 @@ Para gestionar el día a día, estos son los comandos que más vamos a usar para
 - Para iniciarlos de nuevo: `./vendor/bin/sail up -d`.
 
 - Si necesitamos usar Composer: `./vendor/bin/sail composer install`.
+
+Aquí podemos ver un ejemplo para parar los contenedores:
 
 ![Captura de ejemplo parando los contenedores con el comando stop](./capturas/captura7.png)
